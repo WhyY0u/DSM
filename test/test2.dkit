@@ -1,0 +1,6 @@
+#import { Background, Sqd } from 'Utils/BackGround.dkit'
+
+Background {
+ color:red;
+ transform: translate(100);
+}

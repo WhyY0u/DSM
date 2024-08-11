@@ -1,0 +1,13 @@
+#import <Square>
+
+export Square('BackGorund') {
+   color: hex("#FFFFFF");
+   width: 100%;
+   height: 100%;
+ }
+
+export Square('Sqd') {
+   color: hex("#FFFFFF");
+   width: 100px;
+   height: 100px;
+ }
