@@ -12,6 +12,7 @@
 #include "ImportManager.h"
 #include "../ErrorManager/ErrorManager.h"
 #include "../../Utils/FileUtils.h"
+#include "../../Components/ComponentsManager.h"
 
 bool checkIsImportLocal(const std::string& line) {
 	if (line.find("<") != std::string::npos && line.rfind(">") != std::string::npos) return false;
@@ -63,7 +64,7 @@ ImportResultProject getImportFromProject(std::string line, int lineNumber) {
 		return ImportResultProject();
 	}
 
-	if (getImportFromString(result) == Import::Unknown) {
+	if (getComponentFromString(result) == ComponentType::Unknown) {
 		addError("Error import not found: " + line.substr(0, start) + " " + RED_COLOR + " " + result + " " + RESET_COLOR, lineNumber, ErrorType::ImportNotFound);
 		return ImportResultProject();
 	}
