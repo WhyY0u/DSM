@@ -6,8 +6,13 @@
 
 enum class ImportType {
     Unknown,
+    Error,
     Prjoect,
     Local
+};
+struct StructImport {
+    std::vector<std::string> imports;
+    std::string fileName;
 };
 struct ImportResultLocal {
     ImportType type;

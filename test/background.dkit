@@ -1,6 +1,11 @@
 #import <Square>
+#import { Background } from 'Utils/BackGround.dkit' 
 
 export Square('BackGorund') {
+
+   if(isHover() && isActive()) {
+   color: rgb(155,255,255);
+   }
    color: hex("#FFFFFF");
    width: 100%;
    height: 100%;

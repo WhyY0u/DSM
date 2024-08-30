@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -144,6 +144,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\Components\ComponentsManager.cpp" />
+    <ClCompile Include="src\Components\Event\Evenet.cpp" />
     <ClCompile Include="src\DSM.cpp" />
     <ClCompile Include="src\DSM.h" />
     <ClCompile Include="src\Main.cpp" />
@@ -154,9 +155,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Components\ComponentsManager.h" />
+    <ClInclude Include="src\Components\Event\Evenet.h" />
+    <ClInclude Include="src\Components\Operator\If\If.h" />
+    <ClInclude Include="src\Components\Settings\Settings.h" />
+    <ClInclude Include="src\FileManager\FileManager.h" />
     <ClInclude Include="src\Parser\Components\ComponentParser.h" />
     <ClInclude Include="src\Parser\ErrorManager\ErrorManager.h" />
-    <ClInclude Include="src\Parser\Export\ExportManager.h" />
     <ClInclude Include="src\Parser\Export\ParseExport.h" />
     <ClInclude Include="src\Parser\Import\ParseImport.h" />
     <ClInclude Include="src\Parser\Parser.h" />

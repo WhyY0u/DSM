@@ -8,17 +8,25 @@
 enum class ErrorType {
     Syntax,
     ImportNotFound,
+    InsideExport
 };
 
 struct Error {
     std::string text;
     int line;
 };
+std::vector<ErrorType> getAllTypeError();
+class ErrorManager {
 
-extern std::map<ErrorType, std::vector<Error>> errorMap;
+public:
+    void addError(std::string text, int line, const ErrorType error);
+    const std::vector<Error>* getErrors(ErrorType type);
+private:
+    std::map<ErrorType, std::vector<Error>> errorMap;
+};
 
-void addError(std::string text, int line, const ErrorType error);
 
-const std::vector<Error>* getErrors(ErrorType type);
+
+
 
 #endif 
