@@ -10,18 +10,6 @@ std::string getStringFromComponent(const ComponentType type) {
 	return "NULL";
 }
 
-Component ComponentManager::getEditComponent() {
-	return ComponentManager::editComponent;
-}
-
-void ComponentManager::setEditComponent(Component component) {
-	ComponentManager::editComponent = component;
-}
-
-void ComponentManager::newEditComponent() {
-	ComponentManager::editComponent = Component();
-}
-
 std::vector<Setting> Component::getSettings() {
 	return Component::settings;
 }

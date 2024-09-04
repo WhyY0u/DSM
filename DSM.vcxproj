@@ -149,17 +149,21 @@
     <ClCompile Include="src\DSM.h" />
     <ClCompile Include="src\Main.cpp" />
     <ClCompile Include="src\Parser\Components\ComponentParser.cpp" />
+    <ClCompile Include="src\Parser\Components\Operators\IfParser\IfParser.cpp" />
     <ClCompile Include="src\Parser\ErrorManager\ErrorManager.cpp" />
-    <ClCompile Include="src\Parser\Import\ImportManager.h" />
+    <ClCompile Include="src\Utils\ComponentParserUtils.cpp" />
     <ClCompile Include="src\Utils\FileUtils.cpp" />
+    <ClCompile Include="src\Utils\ComponentParserUtils.h" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Components\ComponentsManager.h" />
     <ClInclude Include="src\Components\Event\Evenet.h" />
+    <ClInclude Include="src\Components\Import\Import.h" />
     <ClInclude Include="src\Components\Operator\If\If.h" />
     <ClInclude Include="src\Components\Settings\Settings.h" />
     <ClInclude Include="src\FileManager\FileManager.h" />
     <ClInclude Include="src\Parser\Components\ComponentParser.h" />
+    <ClInclude Include="src\Parser\Components\Operators\IfParser\IfParser.h" />
     <ClInclude Include="src\Parser\ErrorManager\ErrorManager.h" />
     <ClInclude Include="src\Parser\Export\ParseExport.h" />
     <ClInclude Include="src\Parser\Import\ParseImport.h" />

@@ -1,14 +1,16 @@
+#ifndef FILEMANAGER_H
+#define FILEMANAGER_H
+
+
 #include <iostream>
 #include <vector>
 #include <unordered_map>
 #include <stack>
 #include <map>
 
-#include "../Parser/Import/ParseImport.h"
 #include "../Parser/ErrorManager/ErrorManager.h"
-#include "../Parser/Export/ParseExport.h"
-#include "../Parser/Components/ComponentParser.h"
 #include "../Components/ComponentsManager.h"
+#include "../Components/Import/Import.h"
 
 class File {
 public:
@@ -37,20 +39,22 @@ public:
     void setFilePath(std::string path) {
         pathFile = path;
     }
-
-    ComponentManager getComponentManager() {
-        return componentManager;
+    std::string getFileName() {
+        return fileName;
+    }
+    void setFileName(std::string name) {
+        fileName = name;
     }
     ErrorManager& getErrorManager() {
         return errorManager;
     }
 private:
   std::string pathFile;
+  std::string fileName;
   std::map<ImportType, std::vector<StructImport>> imports;
   std::vector<Component> components;
   ErrorManager errorManager;
   std::vector<Component> exportList;
-  ComponentManager componentManager;
 };
 
 class FileManager {
@@ -65,3 +69,4 @@ public:
 private:
 	std::vector<File> fileList;
 };
+#endif // !FILEMANAGER_H

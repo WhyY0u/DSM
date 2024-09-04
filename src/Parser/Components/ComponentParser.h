@@ -1,8 +1,24 @@
 #ifndef COMPONENTPARSER_H
+#define COMPONENTPARSER_H
+
 #include <string>
 #include <iostream>
-#include "../../Components/ComponentsManager.h"
+#include "Operators/IfParser/IfParser.h"
+#include "../../Components/Operator/If/If.h"
+#include "../../FileManager/FileManager.h"
+#include "../../Utils/ComponentParserUtils.h"
 
-Component getParseComponent(std::string line, Component component);
+class ParserComponentManager {
+public:
+	Component getEditComponent();
+	void setEditComponent(Component edit);
+	void newEditComponent();
+	IfParser& getIfParser();
+private:
+	Component editComponent;
+	IfParser ifParser;
+
+};
+ParserComponentManager getParseComponent(std::string line, ParserComponentManager component, File file, int countLine);
 
 #endif // !COMPONENTPARSER_H

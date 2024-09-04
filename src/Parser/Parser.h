@@ -7,6 +7,10 @@
 #include <stack>
 
 #include "../FileManager/FileManager.h"
+#include "../Parser/Import/ParseImport.h"
+#include "../Components/Import/Import.h"
+#include "../Parser/Export/ParseExport.h"
+#include "../Parser/Components/ComponentParser.h"
 
 enum class Token {
 	EXPORT,
@@ -36,18 +40,17 @@ void parseImport(std::string filename, int countLine, std::string line, File& fi
         file.getErrorManager().addError("Unknow Import: " + line, countLine, ErrorType::ImportNotFound);
     }
 }
-void parseComponent(std::string fileName, std::stack<Token>& stack, std::string line, File file, int countLine) {
+void parseComponent(File& file, std::stack<Token>& stack, std::string line, int countLine, ParserComponentManager& parserComponent) {
     if (!stack.empty()) {
         if (stack.size() > 0) {
             if (stack.top() == Token::COMPONENT || stack.top() == Token::EXPORT) {
-                getParseComponent(line, file.getComponentManager().getEditComponent());
-
-           }
+                getParseComponent(line, parserComponent, file, countLine);
+            }
         }
     }
 
     if (line.find("export") != std::string::npos) {
-        Component exports = getExport(line, fileName);
+        Component exports = getExport(line);
         if (exports.getName().empty()) return;
             if (!stack.empty()) {
                 if (stack.size() > 0) {
@@ -56,9 +59,9 @@ void parseComponent(std::string fileName, std::stack<Token>& stack, std::string 
                 }
             }
             stack.push(Token::EXPORT);
-            file.getComponentManager().newEditComponent();
-            file.getComponentManager().getEditComponent().setType(exports.getType());
-            file.getComponentManager().getEditComponent().setName(exports.getName());
+            parserComponent.newEditComponent();
+            parserComponent.getEditComponent().setType(exports.getType());
+            parserComponent.getEditComponent().setName(exports.getName());
     }
 }
 
@@ -74,6 +77,7 @@ void parseFile(const std::string& filename) {
     }
     int countLine = 0;
     files.setFilePath(filename);
+    ParserComponentManager parserComponent;
     while (std::getline(file, line)) {
         if (line.find_first_not_of(" \t") == std::string::npos) continue;
         size_t importPos = line.find("#import");
@@ -85,7 +89,7 @@ void parseFile(const std::string& filename) {
                 parseImport(filename, countLine, line, files);
             }
         }
-        parseComponent(filename, component, line, files, countLine);
+        parseComponent(files, component, line, countLine, parserComponent);
         countLine++;
     }
     file.close();

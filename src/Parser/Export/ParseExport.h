@@ -12,7 +12,7 @@ struct ExportComponent {
     ExportStatus status;
 };
 
-Component getExport(std::string line, std::string fileName) {
+Component getExport(std::string line) {
     std::size_t exportPos = line.find("export");
     std::size_t startPos = line.find_first_not_of(" \t", exportPos + 6);
     Component exports;

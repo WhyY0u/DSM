@@ -9,10 +9,22 @@
 #include <iterator>
 
 #include "../../Utils/ErrorUtils.h"
-#include "ImportManager.h"
 #include "../ErrorManager/ErrorManager.h"
 #include "../../Utils/FileUtils.h"
 #include "../../Components/ComponentsManager.h"
+#include "../../Components/Import/Import.h"
+
+
+struct ImportResultLocal {
+	ImportType type;
+	std::vector<std::string> imports;
+	std::string from;
+};
+struct ImportResultProject {
+	ImportType type;
+	std::string imports;
+};
+
 
 bool checkIsImportLocal(const std::string& line) {
 	if (line.find("<") != std::string::npos && line.rfind(">") != std::string::npos) return false;

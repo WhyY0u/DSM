@@ -16,7 +16,6 @@ std::string getStringFromComponent(const ComponentType type);
 
 
 class Component {
-
 public:
 	std::vector<Setting> getSettings();
 	ComponentType getType();
@@ -31,18 +30,6 @@ private:
 	std::vector<Event> events;
 };
 
-class ComponentManager {
-
-public:
-
-  Component getEditComponent();
-
-  void setEditComponent(Component component);
-  void newEditComponent();
-
-private:
-    Component editComponent;
-};
 
 
 
