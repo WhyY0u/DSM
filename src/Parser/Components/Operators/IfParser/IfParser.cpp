@@ -21,9 +21,10 @@ void IfParser::setStatusParseIF(StatusParseIF state) {
 StatusParseIF IfParser::getStatusParseIF() {
 	return IfParser::statusParseIF;
 }
-void IfParser::ParseIfComponent(std::string line) {
+void IfParser::ParseIfComponent(std::string line, File& file, int countLine) {
 
 	size_t ifs = checkIfEquals(line);
+	bool checkIfs = ifs == std::string::npos;
 	if (ifs != std::string::npos) {
 		if (getStatusParseIF() == StatusParseIF::NotActive) {
 			setStatusParseIF(StatusParseIF::Active);
@@ -33,10 +34,11 @@ void IfParser::ParseIfComponent(std::string line) {
 	}
 
 	if (getStatusParseIF() == StatusParseIF::Active && getActiveParse() == ComponentActiveParse::If) {
-		std::cout << stateBetween.length() << std::endl;
-
 		size_t open = line.find("(");
-		if (ifs != std::string::npos) {
+		if (open == std::string::npos) {
+			bool check = ifs == std::string::npos;
+			stateBetween += check ? line : line.substr(ifs + 2);
+		}
 			if (open != std::string::npos) {
 				if (stateBetween.length() == 0) {
 					std::string result = line.substr(ifs + 2, open - ifs - 2);
@@ -44,13 +46,15 @@ void IfParser::ParseIfComponent(std::string line) {
 
 					}
 				} else {
-					stateBetween += line;
-					std::cout << "BetWeen: " << stateBetween << std::endl;
+					if (stateBetween.find_first_not_of(" \t") == std::string::npos) {
+					       
+					} else {
+						file.getErrorManager().addError("Syntax error between if and ( there may only be tabs or spaces", countLine, ErrorType::Syntax);
+						setStatusParseIF(StatusParseIF::NotActive);
+						setIfEditComponent(If());
+						setActiveParse(ComponentActiveParse::None);
+					}
 				}
-			} else {
-				bool check = ifs == std::string::npos;
-				stateBetween += check ? line : line.substr(ifs + 2);
-			}
 		}
 	}
 }

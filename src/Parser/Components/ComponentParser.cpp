@@ -2,13 +2,13 @@
 
 
 
-ParserComponentManager getParseComponent(std::string line, ParserComponentManager parserManager, File file, int countLine) {
+ParserComponentManager getParseComponent(std::string line, ParserComponentManager& parserManager, File& file, int countLine) {
 	std::cout << "LINE PARSE: " << line << std::endl;
 	if (line.length() == 0 || line.find_first_not_of(" \t") == std::string::npos) return parserManager;
 	size_t ifs = line.find("if");
 	if (ifs != std::string::npos || (getActiveParse() == ComponentActiveParse::If || getActiveParse() == ComponentActiveParse::IfSettings || getActiveParse() == ComponentActiveParse::InsideIF)) {
 		IfParser& parser = parserManager.getIfParser();
-		parser.ParseIfComponent(line);
+		parser.ParseIfComponent(line, file, countLine);
 	}
 	
 	

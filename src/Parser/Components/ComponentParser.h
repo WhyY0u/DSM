@@ -19,6 +19,6 @@ private:
 	IfParser ifParser;
 
 };
-ParserComponentManager getParseComponent(std::string line, ParserComponentManager component, File file, int countLine);
+ParserComponentManager getParseComponent(std::string line, ParserComponentManager& parserManager, File& file, int countLine);
 
 #endif // !COMPONENTPARSER_H
