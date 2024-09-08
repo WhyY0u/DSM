@@ -1,4 +1,5 @@
 #include "IfParser.h"
+#include "../../../../Utils/ErrorUtils.h"
 
 std::string IfParser::getStateBetween() {
 	return IfParser::stateBetween;
@@ -32,31 +33,61 @@ void IfParser::ParseIfComponent(std::string line, File& file, int countLine) {
 			setActiveParse(ComponentActiveParse::If);
 		}
 	}
-
-	if (getStatusParseIF() == StatusParseIF::Active && getActiveParse() == ComponentActiveParse::If) {
+	if (getActiveParse() == ComponentActiveParse::If) {
 		size_t open = line.find("(");
-		if (open == std::string::npos) {
-			bool check = ifs == std::string::npos;
-			stateBetween += check ? line : line.substr(ifs + 2);
-		}
+		if (getStatusParseIF() == StatusParseIF::Active) {
+			if (open == std::string::npos) {
+				bool check = ifs == std::string::npos;
+				stateBetween += check + " \n" ? line : line.substr(ifs + 2) + " \n";
+			}
 			if (open != std::string::npos) {
 				if (stateBetween.length() == 0) {
 					std::string result = line.substr(ifs + 2, open - ifs - 2);
 					if (result.find_first_not_of(" \t") == std::string::npos) {
-
+						setStatusParseIF(StatusParseIF::ActiveСonditions);
+						stateBetween = "";
 					}
-				} else {
-					if (stateBetween.find_first_not_of(" \t") == std::string::npos) {
-					       
-					} else {
-						file.getErrorManager().addError("Syntax error between if and ( there may only be tabs or spaces", countLine, ErrorType::Syntax);
+					else {
+						file.getErrorManager().addError("Syntax error between if and ( there may only be tabs or spaces: " + RED_COLOR + stateBetween + RESET_COLOR, countLine, ErrorType::Syntax);
 						setStatusParseIF(StatusParseIF::NotActive);
 						setIfEditComponent(If());
 						setActiveParse(ComponentActiveParse::None);
 					}
 				}
+				else {
+					if (stateBetween.find_first_not_of(" \t") == std::string::npos) {
+						setStatusParseIF(StatusParseIF::ActiveСonditions);
+						stateBetween = "";
+					}
+					else {
+						file.getErrorManager().addError("Syntax error between if and ( there may only be tabs or spaces: " + RED_COLOR + stateBetween + RESET_COLOR, countLine, ErrorType::Syntax);
+						setStatusParseIF(StatusParseIF::NotActive);
+						setIfEditComponent(If());
+						setActiveParse(ComponentActiveParse::None);
+					}
+				}
+			}
+		}
+		if (getStatusParseIF() == StatusParseIF::ActiveСonditions) {
+		    	stateBetween += line;
+				size_t close = line.find(')', open);
+				if (close != std::string::npos) {
+				
+					if (open >= close) {
+						//Тут надо поменять текст ошибка на то что закрытая скобка стоит сперети открытой
+						file.getErrorManager().addError("Syntax error between if and ( there may only be tabs or spaces: " + RED_COLOR + stateBetween + RESET_COLOR, countLine, ErrorType::Syntax);
+						setStatusParseIF(StatusParseIF::NotActive);
+						setIfEditComponent(If());
+						setActiveParse(ComponentActiveParse::None);
+						return;
+					}
+					//Ай бля хуйня не работает крч надо проверять сколько скобок открыл и сколько закрыл а то хуйня получается так
+					std::string bools = stateBetween.substr(open + 1, close - open - 1);
+					std::cout << bools << std::endl;
+		    }
 		}
 	}
+	
 }
 size_t IfParser::checkIfEquals(std::string line) {
 	size_t ifs = line.find("if");

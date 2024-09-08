@@ -3,12 +3,14 @@
 #include <string>
 #include "../../../../Components/Operator/If/If.h"
 #include "../../../../Utils/ComponentParserUtils.h"
+#include "../../../../Components/Event/Evenet.h"
 #include "../../../../FileManager/FileManager.h"
 
 enum class StatusParseIF {
 	Active,
 	AddSettings,
 	NotActive,
+	Active—onditions,
 	
 };
 class IfParser {
@@ -29,6 +31,9 @@ class IfParser {
 			 break;
 		 case StatusParseIF::NotActive:
 			 return "NotActive";
+			 break;
+		 case StatusParseIF::Active—onditions:
+			 return "Active—onditions";
 			 break;
 		 default:
 			 return "NULL";

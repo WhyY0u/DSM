@@ -1,4 +1,5 @@
 #ifndef EVENT_H
+#define EVENT_H
 #include <iostream>
 #include "../Settings/Settings.h"
 
