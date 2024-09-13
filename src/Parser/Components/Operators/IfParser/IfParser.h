@@ -10,7 +10,7 @@ enum class StatusParseIF {
 	Active,
 	AddSettings,
 	NotActive,
-	Active—onditions,
+	ActiveConditions,
 	
 };
 class IfParser {
@@ -32,8 +32,8 @@ class IfParser {
 		 case StatusParseIF::NotActive:
 			 return "NotActive";
 			 break;
-		 case StatusParseIF::Active—onditions:
-			 return "Active—onditions";
+		 case StatusParseIF::ActiveConditions:
+			 return "ActiveConditions";
 			 break;
 		 default:
 			 return "NULL";

@@ -1,0 +1,3 @@
+/home/whyy0u/Desktop/DIssimilate/DSM/DSM/build/CMakeFiles/DSM.dir
+/home/whyy0u/Desktop/DIssimilate/DSM/DSM/build/CMakeFiles/edit_cache.dir
+/home/whyy0u/Desktop/DIssimilate/DSM/DSM/build/CMakeFiles/rebuild_cache.dir

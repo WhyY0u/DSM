@@ -44,7 +44,7 @@ void IfParser::ParseIfComponent(std::string line, File& file, int countLine) {
 				if (stateBetween.length() == 0) {
 					std::string result = line.substr(ifs + 2, open - ifs - 2);
 					if (result.find_first_not_of(" \t") == std::string::npos) {
-						setStatusParseIF(StatusParseIF::ActiveСonditions);
+						setStatusParseIF(StatusParseIF::ActiveConditions);
 						stateBetween = "";
 					}
 					else {
@@ -56,7 +56,7 @@ void IfParser::ParseIfComponent(std::string line, File& file, int countLine) {
 				}
 				else {
 					if (stateBetween.find_first_not_of(" \t") == std::string::npos) {
-						setStatusParseIF(StatusParseIF::ActiveСonditions);
+						setStatusParseIF(StatusParseIF::ActiveConditions);
 						stateBetween = "";
 					}
 					else {
@@ -68,20 +68,20 @@ void IfParser::ParseIfComponent(std::string line, File& file, int countLine) {
 				}
 			}
 		}
-		if (getStatusParseIF() == StatusParseIF::ActiveСonditions) {
+		if (getStatusParseIF() == StatusParseIF::ActiveConditions) {
 		    	stateBetween += line;
 				size_t close = line.find(')', open);
 				if (close != std::string::npos) {
 				
 					if (open >= close) {
-						//Тут надо поменять текст ошибка на то что закрытая скобка стоит сперети открытой
+						//пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 						file.getErrorManager().addError("Syntax error between if and ( there may only be tabs or spaces: " + RED_COLOR + stateBetween + RESET_COLOR, countLine, ErrorType::Syntax);
 						setStatusParseIF(StatusParseIF::NotActive);
 						setIfEditComponent(If());
 						setActiveParse(ComponentActiveParse::None);
 						return;
 					}
-					//Ай бля хуйня не работает крч надо проверять сколько скобок открыл и сколько закрыл а то хуйня получается так
+					//пїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ
 					std::string bools = stateBetween.substr(open + 1, close - open - 1);
 					std::cout << bools << std::endl;
 		    }

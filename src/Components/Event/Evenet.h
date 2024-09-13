@@ -2,6 +2,7 @@
 #define EVENT_H
 #include <iostream>
 #include "../Settings/Settings.h"
+#include <vector>
 
 enum class EventType {
 	MOUSE_CLICKED,
