@@ -2,12 +2,14 @@
 #import { Background } from 'Utils/BackGround.dkit' 
 
 export Square('BackGorund') {
-   if(isHover()) rounded: 60;
-
-    if(isHover()) {
-      ifj(isActive() && isClick()) {
+   
+     if(isActive() && isClick()) {
          color: rgb(155,255,255);
-       }
+      }
+
+    if(isHover()) rounded: 60;
+    if(isHover()) {
+ 
    }
    color: hex("#FFFFFF");
    width: 100%;

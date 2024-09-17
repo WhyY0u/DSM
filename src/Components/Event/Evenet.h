@@ -10,15 +10,21 @@ enum class EventType {
 	ACTIVE,
 	NONE,
 };
-std::string getEventType(EventType type);
-class Event {
+enum class StatusEvent {
+    Active,
+	NoActive
+};
 
+std::string getEventType(EventType type);
+EventType getEventTypeByString(std::string str);
+class Event {
 public:
 	EventType getType();
-	std::vector<Setting> getSettings();
-
+	void setType(EventType type);
+	StatusEvent getStatusEvent();
+	void setStatusEvent(StatusEvent event);
 private:
 	EventType type;
-	std::vector<Setting> settings;
+	StatusEvent statusEvent;
 };
-#endif // !EVENT_H
+#endif 

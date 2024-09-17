@@ -83,10 +83,24 @@ CMakeFiles/DSM.dir/src/Components/ComponentsManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/DSM.dir/src/Components/ComponentsManager.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whyy0u/Desktop/DIssimilate/DSM/DSM/src/Components/ComponentsManager.cpp -o CMakeFiles/DSM.dir/src/Components/ComponentsManager.cpp.s
 
+CMakeFiles/DSM.dir/src/Components/DataTypes/Bool/Bool.cpp.o: CMakeFiles/DSM.dir/flags.make
+CMakeFiles/DSM.dir/src/Components/DataTypes/Bool/Bool.cpp.o: /home/whyy0u/Desktop/DIssimilate/DSM/DSM/src/Components/DataTypes/Bool/Bool.cpp
+CMakeFiles/DSM.dir/src/Components/DataTypes/Bool/Bool.cpp.o: CMakeFiles/DSM.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whyy0u/Desktop/DIssimilate/DSM/DSM/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/DSM.dir/src/Components/DataTypes/Bool/Bool.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DSM.dir/src/Components/DataTypes/Bool/Bool.cpp.o -MF CMakeFiles/DSM.dir/src/Components/DataTypes/Bool/Bool.cpp.o.d -o CMakeFiles/DSM.dir/src/Components/DataTypes/Bool/Bool.cpp.o -c /home/whyy0u/Desktop/DIssimilate/DSM/DSM/src/Components/DataTypes/Bool/Bool.cpp
+
+CMakeFiles/DSM.dir/src/Components/DataTypes/Bool/Bool.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/DSM.dir/src/Components/DataTypes/Bool/Bool.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whyy0u/Desktop/DIssimilate/DSM/DSM/src/Components/DataTypes/Bool/Bool.cpp > CMakeFiles/DSM.dir/src/Components/DataTypes/Bool/Bool.cpp.i
+
+CMakeFiles/DSM.dir/src/Components/DataTypes/Bool/Bool.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/DSM.dir/src/Components/DataTypes/Bool/Bool.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whyy0u/Desktop/DIssimilate/DSM/DSM/src/Components/DataTypes/Bool/Bool.cpp -o CMakeFiles/DSM.dir/src/Components/DataTypes/Bool/Bool.cpp.s
+
 CMakeFiles/DSM.dir/src/Components/Event/Evenet.cpp.o: CMakeFiles/DSM.dir/flags.make
 CMakeFiles/DSM.dir/src/Components/Event/Evenet.cpp.o: /home/whyy0u/Desktop/DIssimilate/DSM/DSM/src/Components/Event/Evenet.cpp
 CMakeFiles/DSM.dir/src/Components/Event/Evenet.cpp.o: CMakeFiles/DSM.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whyy0u/Desktop/DIssimilate/DSM/DSM/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/DSM.dir/src/Components/Event/Evenet.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whyy0u/Desktop/DIssimilate/DSM/DSM/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/DSM.dir/src/Components/Event/Evenet.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DSM.dir/src/Components/Event/Evenet.cpp.o -MF CMakeFiles/DSM.dir/src/Components/Event/Evenet.cpp.o.d -o CMakeFiles/DSM.dir/src/Components/Event/Evenet.cpp.o -c /home/whyy0u/Desktop/DIssimilate/DSM/DSM/src/Components/Event/Evenet.cpp
 
 CMakeFiles/DSM.dir/src/Components/Event/Evenet.cpp.i: cmake_force
@@ -100,7 +114,7 @@ CMakeFiles/DSM.dir/src/Components/Event/Evenet.cpp.s: cmake_force
 CMakeFiles/DSM.dir/src/Parser/Components/ComponentParser.cpp.o: CMakeFiles/DSM.dir/flags.make
 CMakeFiles/DSM.dir/src/Parser/Components/ComponentParser.cpp.o: /home/whyy0u/Desktop/DIssimilate/DSM/DSM/src/Parser/Components/ComponentParser.cpp
 CMakeFiles/DSM.dir/src/Parser/Components/ComponentParser.cpp.o: CMakeFiles/DSM.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whyy0u/Desktop/DIssimilate/DSM/DSM/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/DSM.dir/src/Parser/Components/ComponentParser.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whyy0u/Desktop/DIssimilate/DSM/DSM/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/DSM.dir/src/Parser/Components/ComponentParser.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DSM.dir/src/Parser/Components/ComponentParser.cpp.o -MF CMakeFiles/DSM.dir/src/Parser/Components/ComponentParser.cpp.o.d -o CMakeFiles/DSM.dir/src/Parser/Components/ComponentParser.cpp.o -c /home/whyy0u/Desktop/DIssimilate/DSM/DSM/src/Parser/Components/ComponentParser.cpp
 
 CMakeFiles/DSM.dir/src/Parser/Components/ComponentParser.cpp.i: cmake_force
@@ -111,10 +125,24 @@ CMakeFiles/DSM.dir/src/Parser/Components/ComponentParser.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/DSM.dir/src/Parser/Components/ComponentParser.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whyy0u/Desktop/DIssimilate/DSM/DSM/src/Parser/Components/ComponentParser.cpp -o CMakeFiles/DSM.dir/src/Parser/Components/ComponentParser.cpp.s
 
+CMakeFiles/DSM.dir/src/Parser/Components/DataTypes/Bool/BoolParser.cpp.o: CMakeFiles/DSM.dir/flags.make
+CMakeFiles/DSM.dir/src/Parser/Components/DataTypes/Bool/BoolParser.cpp.o: /home/whyy0u/Desktop/DIssimilate/DSM/DSM/src/Parser/Components/DataTypes/Bool/BoolParser.cpp
+CMakeFiles/DSM.dir/src/Parser/Components/DataTypes/Bool/BoolParser.cpp.o: CMakeFiles/DSM.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whyy0u/Desktop/DIssimilate/DSM/DSM/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/DSM.dir/src/Parser/Components/DataTypes/Bool/BoolParser.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DSM.dir/src/Parser/Components/DataTypes/Bool/BoolParser.cpp.o -MF CMakeFiles/DSM.dir/src/Parser/Components/DataTypes/Bool/BoolParser.cpp.o.d -o CMakeFiles/DSM.dir/src/Parser/Components/DataTypes/Bool/BoolParser.cpp.o -c /home/whyy0u/Desktop/DIssimilate/DSM/DSM/src/Parser/Components/DataTypes/Bool/BoolParser.cpp
+
+CMakeFiles/DSM.dir/src/Parser/Components/DataTypes/Bool/BoolParser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/DSM.dir/src/Parser/Components/DataTypes/Bool/BoolParser.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whyy0u/Desktop/DIssimilate/DSM/DSM/src/Parser/Components/DataTypes/Bool/BoolParser.cpp > CMakeFiles/DSM.dir/src/Parser/Components/DataTypes/Bool/BoolParser.cpp.i
+
+CMakeFiles/DSM.dir/src/Parser/Components/DataTypes/Bool/BoolParser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/DSM.dir/src/Parser/Components/DataTypes/Bool/BoolParser.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whyy0u/Desktop/DIssimilate/DSM/DSM/src/Parser/Components/DataTypes/Bool/BoolParser.cpp -o CMakeFiles/DSM.dir/src/Parser/Components/DataTypes/Bool/BoolParser.cpp.s
+
 CMakeFiles/DSM.dir/src/Parser/Components/Operators/IfParser/IfParser.cpp.o: CMakeFiles/DSM.dir/flags.make
 CMakeFiles/DSM.dir/src/Parser/Components/Operators/IfParser/IfParser.cpp.o: /home/whyy0u/Desktop/DIssimilate/DSM/DSM/src/Parser/Components/Operators/IfParser/IfParser.cpp
 CMakeFiles/DSM.dir/src/Parser/Components/Operators/IfParser/IfParser.cpp.o: CMakeFiles/DSM.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whyy0u/Desktop/DIssimilate/DSM/DSM/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/DSM.dir/src/Parser/Components/Operators/IfParser/IfParser.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whyy0u/Desktop/DIssimilate/DSM/DSM/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/DSM.dir/src/Parser/Components/Operators/IfParser/IfParser.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DSM.dir/src/Parser/Components/Operators/IfParser/IfParser.cpp.o -MF CMakeFiles/DSM.dir/src/Parser/Components/Operators/IfParser/IfParser.cpp.o.d -o CMakeFiles/DSM.dir/src/Parser/Components/Operators/IfParser/IfParser.cpp.o -c /home/whyy0u/Desktop/DIssimilate/DSM/DSM/src/Parser/Components/Operators/IfParser/IfParser.cpp
 
 CMakeFiles/DSM.dir/src/Parser/Components/Operators/IfParser/IfParser.cpp.i: cmake_force
@@ -128,7 +156,7 @@ CMakeFiles/DSM.dir/src/Parser/Components/Operators/IfParser/IfParser.cpp.s: cmak
 CMakeFiles/DSM.dir/src/Parser/ErrorManager/ErrorManager.cpp.o: CMakeFiles/DSM.dir/flags.make
 CMakeFiles/DSM.dir/src/Parser/ErrorManager/ErrorManager.cpp.o: /home/whyy0u/Desktop/DIssimilate/DSM/DSM/src/Parser/ErrorManager/ErrorManager.cpp
 CMakeFiles/DSM.dir/src/Parser/ErrorManager/ErrorManager.cpp.o: CMakeFiles/DSM.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whyy0u/Desktop/DIssimilate/DSM/DSM/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/DSM.dir/src/Parser/ErrorManager/ErrorManager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whyy0u/Desktop/DIssimilate/DSM/DSM/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/DSM.dir/src/Parser/ErrorManager/ErrorManager.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DSM.dir/src/Parser/ErrorManager/ErrorManager.cpp.o -MF CMakeFiles/DSM.dir/src/Parser/ErrorManager/ErrorManager.cpp.o.d -o CMakeFiles/DSM.dir/src/Parser/ErrorManager/ErrorManager.cpp.o -c /home/whyy0u/Desktop/DIssimilate/DSM/DSM/src/Parser/ErrorManager/ErrorManager.cpp
 
 CMakeFiles/DSM.dir/src/Parser/ErrorManager/ErrorManager.cpp.i: cmake_force
@@ -142,7 +170,7 @@ CMakeFiles/DSM.dir/src/Parser/ErrorManager/ErrorManager.cpp.s: cmake_force
 CMakeFiles/DSM.dir/src/Utils/ComponentParserUtils.cpp.o: CMakeFiles/DSM.dir/flags.make
 CMakeFiles/DSM.dir/src/Utils/ComponentParserUtils.cpp.o: /home/whyy0u/Desktop/DIssimilate/DSM/DSM/src/Utils/ComponentParserUtils.cpp
 CMakeFiles/DSM.dir/src/Utils/ComponentParserUtils.cpp.o: CMakeFiles/DSM.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whyy0u/Desktop/DIssimilate/DSM/DSM/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/DSM.dir/src/Utils/ComponentParserUtils.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whyy0u/Desktop/DIssimilate/DSM/DSM/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/DSM.dir/src/Utils/ComponentParserUtils.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DSM.dir/src/Utils/ComponentParserUtils.cpp.o -MF CMakeFiles/DSM.dir/src/Utils/ComponentParserUtils.cpp.o.d -o CMakeFiles/DSM.dir/src/Utils/ComponentParserUtils.cpp.o -c /home/whyy0u/Desktop/DIssimilate/DSM/DSM/src/Utils/ComponentParserUtils.cpp
 
 CMakeFiles/DSM.dir/src/Utils/ComponentParserUtils.cpp.i: cmake_force
@@ -156,7 +184,7 @@ CMakeFiles/DSM.dir/src/Utils/ComponentParserUtils.cpp.s: cmake_force
 CMakeFiles/DSM.dir/src/Utils/FileUtils.cpp.o: CMakeFiles/DSM.dir/flags.make
 CMakeFiles/DSM.dir/src/Utils/FileUtils.cpp.o: /home/whyy0u/Desktop/DIssimilate/DSM/DSM/src/Utils/FileUtils.cpp
 CMakeFiles/DSM.dir/src/Utils/FileUtils.cpp.o: CMakeFiles/DSM.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whyy0u/Desktop/DIssimilate/DSM/DSM/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/DSM.dir/src/Utils/FileUtils.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whyy0u/Desktop/DIssimilate/DSM/DSM/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/DSM.dir/src/Utils/FileUtils.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DSM.dir/src/Utils/FileUtils.cpp.o -MF CMakeFiles/DSM.dir/src/Utils/FileUtils.cpp.o.d -o CMakeFiles/DSM.dir/src/Utils/FileUtils.cpp.o -c /home/whyy0u/Desktop/DIssimilate/DSM/DSM/src/Utils/FileUtils.cpp
 
 CMakeFiles/DSM.dir/src/Utils/FileUtils.cpp.i: cmake_force
@@ -170,7 +198,7 @@ CMakeFiles/DSM.dir/src/Utils/FileUtils.cpp.s: cmake_force
 CMakeFiles/DSM.dir/src/Main.cpp.o: CMakeFiles/DSM.dir/flags.make
 CMakeFiles/DSM.dir/src/Main.cpp.o: /home/whyy0u/Desktop/DIssimilate/DSM/DSM/src/Main.cpp
 CMakeFiles/DSM.dir/src/Main.cpp.o: CMakeFiles/DSM.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whyy0u/Desktop/DIssimilate/DSM/DSM/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/DSM.dir/src/Main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whyy0u/Desktop/DIssimilate/DSM/DSM/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/DSM.dir/src/Main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DSM.dir/src/Main.cpp.o -MF CMakeFiles/DSM.dir/src/Main.cpp.o.d -o CMakeFiles/DSM.dir/src/Main.cpp.o -c /home/whyy0u/Desktop/DIssimilate/DSM/DSM/src/Main.cpp
 
 CMakeFiles/DSM.dir/src/Main.cpp.i: cmake_force
@@ -184,8 +212,10 @@ CMakeFiles/DSM.dir/src/Main.cpp.s: cmake_force
 # Object files for target DSM
 DSM_OBJECTS = \
 "CMakeFiles/DSM.dir/src/Components/ComponentsManager.cpp.o" \
+"CMakeFiles/DSM.dir/src/Components/DataTypes/Bool/Bool.cpp.o" \
 "CMakeFiles/DSM.dir/src/Components/Event/Evenet.cpp.o" \
 "CMakeFiles/DSM.dir/src/Parser/Components/ComponentParser.cpp.o" \
+"CMakeFiles/DSM.dir/src/Parser/Components/DataTypes/Bool/BoolParser.cpp.o" \
 "CMakeFiles/DSM.dir/src/Parser/Components/Operators/IfParser/IfParser.cpp.o" \
 "CMakeFiles/DSM.dir/src/Parser/ErrorManager/ErrorManager.cpp.o" \
 "CMakeFiles/DSM.dir/src/Utils/ComponentParserUtils.cpp.o" \
@@ -196,8 +226,10 @@ DSM_OBJECTS = \
 DSM_EXTERNAL_OBJECTS =
 
 DSM: CMakeFiles/DSM.dir/src/Components/ComponentsManager.cpp.o
+DSM: CMakeFiles/DSM.dir/src/Components/DataTypes/Bool/Bool.cpp.o
 DSM: CMakeFiles/DSM.dir/src/Components/Event/Evenet.cpp.o
 DSM: CMakeFiles/DSM.dir/src/Parser/Components/ComponentParser.cpp.o
+DSM: CMakeFiles/DSM.dir/src/Parser/Components/DataTypes/Bool/BoolParser.cpp.o
 DSM: CMakeFiles/DSM.dir/src/Parser/Components/Operators/IfParser/IfParser.cpp.o
 DSM: CMakeFiles/DSM.dir/src/Parser/ErrorManager/ErrorManager.cpp.o
 DSM: CMakeFiles/DSM.dir/src/Utils/ComponentParserUtils.cpp.o
@@ -205,7 +237,7 @@ DSM: CMakeFiles/DSM.dir/src/Utils/FileUtils.cpp.o
 DSM: CMakeFiles/DSM.dir/src/Main.cpp.o
 DSM: CMakeFiles/DSM.dir/build.make
 DSM: CMakeFiles/DSM.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/whyy0u/Desktop/DIssimilate/DSM/DSM/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable DSM"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/whyy0u/Desktop/DIssimilate/DSM/DSM/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable DSM"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/DSM.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

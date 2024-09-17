@@ -1,10 +1,14 @@
 #ifndef IFPARSER_H
 #define IFPARSER_H
 #include <string>
-#include "../../../../Components/Operator/If/If.h"
-#include "../../../../Utils/ComponentParserUtils.h"
-#include "../../../../Components/Event/Evenet.h"
-#include "../../../../FileManager/FileManager.h"
+#include "If.h"
+#include "ComponentParserUtils.h"
+#include "Evenet.h"
+#include "FileManager.h"
+#include "Bool.h"
+#include "ErrorUtils.h"
+#include "BoolParser.h"
+#include <regex>
 
 enum class StatusParseIF {
 	Active,
@@ -42,12 +46,12 @@ class IfParser {
 	 }
 	 size_t checkIfEquals(std::string line);
 	 If getEditIfComponent();
-
+    std::vector<Bool> split(const std::string& str);
 	 void ParseIfComponent(std::string line, File& file, int countLine);
  private:
 	 std::string stateBetween;
 	 StatusParseIF statusParseIF = StatusParseIF::NotActive;
-
+     int countOpen = 0, countClose = 0;
 	 If editIfComponent;
 
 };

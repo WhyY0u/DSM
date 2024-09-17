@@ -1,7 +1,7 @@
-CMakeFiles/DSM.dir/src/Parser/Components/Operators/IfParser/IfParser.cpp.o: \
- /home/whyy0u/Desktop/DIssimilate/DSM/DSM/src/Parser/Components/Operators/IfParser/IfParser.cpp \
+CMakeFiles/DSM.dir/src/Parser/Components/DataTypes/Bool/BoolParser.cpp.o: \
+ /home/whyy0u/Desktop/DIssimilate/DSM/DSM/src/Parser/Components/DataTypes/Bool/BoolParser.cpp \
  /usr/include/stdc-predef.h \
- /home/whyy0u/Desktop/DIssimilate/DSM/DSM/src/Parser/Components/Operators/IfParser/IfParser.h \
+ /home/whyy0u/Desktop/DIssimilate/DSM/DSM/src/Parser/Components/DataTypes/Bool/BoolParser.h \
  /usr/include/c++/14/string /usr/include/c++/14/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/14/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/14/bits/os_defines.h \
@@ -118,7 +118,6 @@ CMakeFiles/DSM.dir/src/Parser/Components/Operators/IfParser/IfParser.cpp.o: \
  /usr/include/c++/14/bits/memory_resource.h /usr/include/c++/14/cstddef \
  /usr/include/c++/14/bits/uses_allocator.h \
  /usr/include/c++/14/bits/uses_allocator_args.h /usr/include/c++/14/tuple \
- /home/whyy0u/Desktop/DIssimilate/DSM/DSM/src/Components/Operator/If/If.h \
  /usr/include/c++/14/iostream /usr/include/c++/14/ostream \
  /usr/include/c++/14/ios /usr/include/c++/14/exception \
  /usr/include/c++/14/bits/exception_ptr.h \
@@ -155,12 +154,10 @@ CMakeFiles/DSM.dir/src/Parser/Components/Operators/IfParser/IfParser.cpp.o: \
  /usr/include/c++/14/bits/locale_facets.tcc \
  /usr/include/c++/14/bits/basic_ios.tcc \
  /usr/include/c++/14/bits/ostream.tcc /usr/include/c++/14/istream \
- /usr/include/c++/14/bits/istream.tcc /usr/include/c++/14/vector \
- /usr/include/c++/14/bits/stl_uninitialized.h \
- /usr/include/c++/14/bits/stl_vector.h \
- /usr/include/c++/14/bits/stl_bvector.h \
- /usr/include/c++/14/bits/vector.tcc \
- /home/whyy0u/Desktop/DIssimilate/DSM/DSM/src/Components/Operator/If/../../Settings/Settings.h \
+ /usr/include/c++/14/bits/istream.tcc \
+ /home/whyy0u/Desktop/DIssimilate/DSM/DSM/src/Components/DataTypes/Bool/Bool.h \
+ /home/whyy0u/Desktop/DIssimilate/DSM/DSM/src/Components/Event/Evenet.h \
+ /home/whyy0u/Desktop/DIssimilate/DSM/DSM/src/Components/Event/../Settings/Settings.h \
  /usr/include/c++/14/unordered_map \
  /usr/include/c++/14/bits/unordered_map.h \
  /usr/include/c++/14/bits/hashtable.h \
@@ -169,51 +166,8 @@ CMakeFiles/DSM.dir/src/Parser/Components/Operators/IfParser/IfParser.cpp.o: \
  /usr/include/c++/14/bits/enable_special_members.h \
  /usr/include/c++/14/bits/node_handle.h \
  /usr/include/c++/14/bits/erase_if.h /usr/include/c++/14/variant \
- /usr/include/c++/14/bits/parse_numbers.h \
- /home/whyy0u/Desktop/DIssimilate/DSM/DSM/src/Utils/ComponentParserUtils.h \
- /home/whyy0u/Desktop/DIssimilate/DSM/DSM/src/Components/Event/Evenet.h \
- /home/whyy0u/Desktop/DIssimilate/DSM/DSM/src/Components/Event/../Settings/Settings.h \
- /home/whyy0u/Desktop/DIssimilate/DSM/DSM/src/FileManager/FileManager.h \
- /usr/include/c++/14/stack /usr/include/c++/14/deque \
- /usr/include/c++/14/bits/stl_deque.h /usr/include/c++/14/bits/deque.tcc \
- /usr/include/c++/14/bits/stl_stack.h /usr/include/c++/14/map \
- /usr/include/c++/14/bits/stl_tree.h /usr/include/c++/14/bits/stl_map.h \
- /usr/include/c++/14/bits/stl_multimap.h \
- /home/whyy0u/Desktop/DIssimilate/DSM/DSM/src/FileManager/../Parser/ErrorManager/ErrorManager.h \
- /home/whyy0u/Desktop/DIssimilate/DSM/DSM/src/FileManager/../Components/ComponentsManager.h \
- /home/whyy0u/Desktop/DIssimilate/DSM/DSM/src/FileManager/../Components/Event/Evenet.h \
- /home/whyy0u/Desktop/DIssimilate/DSM/DSM/src/FileManager/../Components/Import/Import.h \
- /home/whyy0u/Desktop/DIssimilate/DSM/DSM/src/Components/DataTypes/Bool/Bool.h \
- /home/whyy0u/Desktop/DIssimilate/DSM/DSM/src/Utils/ErrorUtils.h \
- /home/whyy0u/Desktop/DIssimilate/DSM/DSM/src/Parser/Components/DataTypes/Bool/BoolParser.h \
- /usr/include/c++/14/regex /usr/include/c++/14/bitset \
- /usr/include/c++/14/locale \
- /usr/include/c++/14/bits/locale_facets_nonio.h /usr/include/c++/14/ctime \
- /usr/include/x86_64-linux-gnu/c++/14/bits/time_members.h \
- /usr/include/x86_64-linux-gnu/c++/14/bits/messages_members.h \
- /usr/include/libintl.h /usr/include/c++/14/bits/codecvt.h \
- /usr/include/c++/14/bits/locale_facets_nonio.tcc \
- /usr/include/c++/14/bits/locale_conv.h /usr/include/c++/14/sstream \
- /usr/include/c++/14/bits/sstream.tcc \
- /usr/include/c++/14/bits/shared_ptr.h \
- /usr/include/c++/14/bits/shared_ptr_base.h \
- /usr/include/c++/14/bits/allocated_ptr.h \
- /usr/include/c++/14/bits/unique_ptr.h \
- /usr/include/c++/14/ext/concurrence.h \
- /usr/include/c++/14/bits/std_function.h \
- /usr/include/c++/14/bits/stl_algo.h \
- /usr/include/c++/14/bits/algorithmfwd.h \
- /usr/include/c++/14/bits/stl_heap.h \
- /usr/include/c++/14/bits/uniform_int_dist.h \
- /usr/include/c++/14/bits/stl_tempbuf.h \
- /usr/include/c++/14/bits/regex_constants.h \
- /usr/include/c++/14/bits/regex_error.h \
- /usr/include/c++/14/bits/regex_automaton.h \
- /usr/include/c++/14/bits/regex_automaton.tcc \
- /usr/include/c++/14/bits/regex_scanner.h \
- /usr/include/c++/14/bits/regex_scanner.tcc \
- /usr/include/c++/14/bits/regex_compiler.h \
- /usr/include/c++/14/bits/regex_compiler.tcc \
- /usr/include/c++/14/bits/regex.h /usr/include/c++/14/bits/regex.tcc \
- /usr/include/c++/14/bits/regex_executor.h \
- /usr/include/c++/14/bits/regex_executor.tcc
+ /usr/include/c++/14/bits/parse_numbers.h /usr/include/c++/14/vector \
+ /usr/include/c++/14/bits/stl_uninitialized.h \
+ /usr/include/c++/14/bits/stl_vector.h \
+ /usr/include/c++/14/bits/stl_bvector.h \
+ /usr/include/c++/14/bits/vector.tcc

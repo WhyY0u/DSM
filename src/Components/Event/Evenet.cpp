@@ -4,8 +4,16 @@ EventType Event::getType() {
 	return Event::type;
 }
 
-std::vector<Setting> Event::getSettings(){
-	return Event::settings;
+void Event::setType(EventType type) {
+	this->type = type;
+}
+
+StatusEvent Event::getStatusEvent() {
+    return statusEvent;
+}
+
+void Event::setStatusEvent(StatusEvent event) {
+	this->statusEvent = event;
 }
 
 std::string getEventType(EventType type) {

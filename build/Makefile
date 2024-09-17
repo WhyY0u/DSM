@@ -153,6 +153,30 @@ src/Components/ComponentsManager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DSM.dir/build.make CMakeFiles/DSM.dir/src/Components/ComponentsManager.cpp.s
 .PHONY : src/Components/ComponentsManager.cpp.s
 
+src/Components/DataTypes/Bool/Bool.o: src/Components/DataTypes/Bool/Bool.cpp.o
+.PHONY : src/Components/DataTypes/Bool/Bool.o
+
+# target to build an object file
+src/Components/DataTypes/Bool/Bool.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DSM.dir/build.make CMakeFiles/DSM.dir/src/Components/DataTypes/Bool/Bool.cpp.o
+.PHONY : src/Components/DataTypes/Bool/Bool.cpp.o
+
+src/Components/DataTypes/Bool/Bool.i: src/Components/DataTypes/Bool/Bool.cpp.i
+.PHONY : src/Components/DataTypes/Bool/Bool.i
+
+# target to preprocess a source file
+src/Components/DataTypes/Bool/Bool.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DSM.dir/build.make CMakeFiles/DSM.dir/src/Components/DataTypes/Bool/Bool.cpp.i
+.PHONY : src/Components/DataTypes/Bool/Bool.cpp.i
+
+src/Components/DataTypes/Bool/Bool.s: src/Components/DataTypes/Bool/Bool.cpp.s
+.PHONY : src/Components/DataTypes/Bool/Bool.s
+
+# target to generate assembly for a file
+src/Components/DataTypes/Bool/Bool.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DSM.dir/build.make CMakeFiles/DSM.dir/src/Components/DataTypes/Bool/Bool.cpp.s
+.PHONY : src/Components/DataTypes/Bool/Bool.cpp.s
+
 src/Components/Event/Evenet.o: src/Components/Event/Evenet.cpp.o
 .PHONY : src/Components/Event/Evenet.o
 
@@ -224,6 +248,30 @@ src/Parser/Components/ComponentParser.s: src/Parser/Components/ComponentParser.c
 src/Parser/Components/ComponentParser.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DSM.dir/build.make CMakeFiles/DSM.dir/src/Parser/Components/ComponentParser.cpp.s
 .PHONY : src/Parser/Components/ComponentParser.cpp.s
+
+src/Parser/Components/DataTypes/Bool/BoolParser.o: src/Parser/Components/DataTypes/Bool/BoolParser.cpp.o
+.PHONY : src/Parser/Components/DataTypes/Bool/BoolParser.o
+
+# target to build an object file
+src/Parser/Components/DataTypes/Bool/BoolParser.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DSM.dir/build.make CMakeFiles/DSM.dir/src/Parser/Components/DataTypes/Bool/BoolParser.cpp.o
+.PHONY : src/Parser/Components/DataTypes/Bool/BoolParser.cpp.o
+
+src/Parser/Components/DataTypes/Bool/BoolParser.i: src/Parser/Components/DataTypes/Bool/BoolParser.cpp.i
+.PHONY : src/Parser/Components/DataTypes/Bool/BoolParser.i
+
+# target to preprocess a source file
+src/Parser/Components/DataTypes/Bool/BoolParser.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DSM.dir/build.make CMakeFiles/DSM.dir/src/Parser/Components/DataTypes/Bool/BoolParser.cpp.i
+.PHONY : src/Parser/Components/DataTypes/Bool/BoolParser.cpp.i
+
+src/Parser/Components/DataTypes/Bool/BoolParser.s: src/Parser/Components/DataTypes/Bool/BoolParser.cpp.s
+.PHONY : src/Parser/Components/DataTypes/Bool/BoolParser.s
+
+# target to generate assembly for a file
+src/Parser/Components/DataTypes/Bool/BoolParser.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DSM.dir/build.make CMakeFiles/DSM.dir/src/Parser/Components/DataTypes/Bool/BoolParser.cpp.s
+.PHONY : src/Parser/Components/DataTypes/Bool/BoolParser.cpp.s
 
 src/Parser/Components/Operators/IfParser/IfParser.o: src/Parser/Components/Operators/IfParser/IfParser.cpp.o
 .PHONY : src/Parser/Components/Operators/IfParser/IfParser.o
@@ -333,6 +381,9 @@ help:
 	@echo "... src/Components/ComponentsManager.o"
 	@echo "... src/Components/ComponentsManager.i"
 	@echo "... src/Components/ComponentsManager.s"
+	@echo "... src/Components/DataTypes/Bool/Bool.o"
+	@echo "... src/Components/DataTypes/Bool/Bool.i"
+	@echo "... src/Components/DataTypes/Bool/Bool.s"
 	@echo "... src/Components/Event/Evenet.o"
 	@echo "... src/Components/Event/Evenet.i"
 	@echo "... src/Components/Event/Evenet.s"
@@ -342,6 +393,9 @@ help:
 	@echo "... src/Parser/Components/ComponentParser.o"
 	@echo "... src/Parser/Components/ComponentParser.i"
 	@echo "... src/Parser/Components/ComponentParser.s"
+	@echo "... src/Parser/Components/DataTypes/Bool/BoolParser.o"
+	@echo "... src/Parser/Components/DataTypes/Bool/BoolParser.i"
+	@echo "... src/Parser/Components/DataTypes/Bool/BoolParser.s"
 	@echo "... src/Parser/Components/Operators/IfParser/IfParser.o"
 	@echo "... src/Parser/Components/Operators/IfParser/IfParser.i"
 	@echo "... src/Parser/Components/Operators/IfParser/IfParser.s"

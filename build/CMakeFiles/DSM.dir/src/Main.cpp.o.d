@@ -194,11 +194,43 @@ CMakeFiles/DSM.dir/src/Main.cpp.o: \
  /home/whyy0u/Desktop/DIssimilate/DSM/DSM/src/Parser/../Parser/Export/../../Components/ComponentsManager.h \
  /home/whyy0u/Desktop/DIssimilate/DSM/DSM/src/Parser/../Parser/Components/ComponentParser.h \
  /home/whyy0u/Desktop/DIssimilate/DSM/DSM/src/Parser/../Parser/Components/Operators/IfParser/IfParser.h \
- /home/whyy0u/Desktop/DIssimilate/DSM/DSM/src/Parser/../Parser/Components/Operators/IfParser/../../../../Components/Operator/If/If.h \
- /home/whyy0u/Desktop/DIssimilate/DSM/DSM/src/Parser/../Parser/Components/Operators/IfParser/../../../../Components/Operator/If/../../Settings/Settings.h \
- /home/whyy0u/Desktop/DIssimilate/DSM/DSM/src/Parser/../Parser/Components/Operators/IfParser/../../../../Utils/ComponentParserUtils.h \
- /home/whyy0u/Desktop/DIssimilate/DSM/DSM/src/Parser/../Parser/Components/Operators/IfParser/../../../../Components/Event/Evenet.h \
- /home/whyy0u/Desktop/DIssimilate/DSM/DSM/src/Parser/../Parser/Components/Operators/IfParser/../../../../FileManager/FileManager.h \
+ /home/whyy0u/Desktop/DIssimilate/DSM/DSM/src/Components/Operator/If/If.h \
+ /home/whyy0u/Desktop/DIssimilate/DSM/DSM/src/Components/Operator/If/../../Settings/Settings.h \
+ /home/whyy0u/Desktop/DIssimilate/DSM/DSM/src/Utils/ComponentParserUtils.h \
+ /home/whyy0u/Desktop/DIssimilate/DSM/DSM/src/Components/Event/Evenet.h \
+ /home/whyy0u/Desktop/DIssimilate/DSM/DSM/src/FileManager/FileManager.h \
+ /home/whyy0u/Desktop/DIssimilate/DSM/DSM/src/Components/DataTypes/Bool/Bool.h \
+ /home/whyy0u/Desktop/DIssimilate/DSM/DSM/src/Utils/ErrorUtils.h \
+ /home/whyy0u/Desktop/DIssimilate/DSM/DSM/src/Parser/Components/DataTypes/Bool/BoolParser.h \
+ /usr/include/c++/14/regex /usr/include/c++/14/bitset \
+ /usr/include/c++/14/locale \
+ /usr/include/c++/14/bits/locale_facets_nonio.h /usr/include/c++/14/ctime \
+ /usr/include/x86_64-linux-gnu/c++/14/bits/time_members.h \
+ /usr/include/x86_64-linux-gnu/c++/14/bits/messages_members.h \
+ /usr/include/libintl.h /usr/include/c++/14/bits/locale_facets_nonio.tcc \
+ /usr/include/c++/14/bits/locale_conv.h \
+ /usr/include/c++/14/bits/shared_ptr.h \
+ /usr/include/c++/14/bits/shared_ptr_base.h \
+ /usr/include/c++/14/bits/allocated_ptr.h \
+ /usr/include/c++/14/bits/unique_ptr.h \
+ /usr/include/c++/14/ext/concurrence.h \
+ /usr/include/c++/14/bits/std_function.h \
+ /usr/include/c++/14/bits/stl_algo.h \
+ /usr/include/c++/14/bits/algorithmfwd.h \
+ /usr/include/c++/14/bits/stl_heap.h \
+ /usr/include/c++/14/bits/uniform_int_dist.h \
+ /usr/include/c++/14/bits/stl_tempbuf.h \
+ /usr/include/c++/14/bits/regex_constants.h \
+ /usr/include/c++/14/bits/regex_error.h \
+ /usr/include/c++/14/bits/regex_automaton.h \
+ /usr/include/c++/14/bits/regex_automaton.tcc \
+ /usr/include/c++/14/bits/regex_scanner.h \
+ /usr/include/c++/14/bits/regex_scanner.tcc \
+ /usr/include/c++/14/bits/regex_compiler.h \
+ /usr/include/c++/14/bits/regex_compiler.tcc \
+ /usr/include/c++/14/bits/regex.h /usr/include/c++/14/bits/regex.tcc \
+ /usr/include/c++/14/bits/regex_executor.h \
+ /usr/include/c++/14/bits/regex_executor.tcc \
  /home/whyy0u/Desktop/DIssimilate/DSM/DSM/src/Parser/../Parser/Components/../../Components/Operator/If/If.h \
  /home/whyy0u/Desktop/DIssimilate/DSM/DSM/src/Parser/../Parser/Components/../../FileManager/FileManager.h \
  /home/whyy0u/Desktop/DIssimilate/DSM/DSM/src/Parser/../Parser/Components/../../Utils/ComponentParserUtils.h
